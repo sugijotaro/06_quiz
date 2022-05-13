@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -43,15 +44,24 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swift-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="C4c-AF-kWN">
+                                <rect key="frame" x="56.5" y="285" width="262.5" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C4c-AF-kWN" secondAttribute="height" multiplier="8:5" id="eed-Qt-ago"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="olW-jU-WC7"/>
                         <color key="backgroundColor" red="1" green="0.48627450980392156" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="sL8-ZN-vPH" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2ww-dC-VOw"/>
                             <constraint firstItem="0UR-GE-O8M" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="G1K-KO-Evw"/>
+                            <constraint firstItem="C4c-AF-kWN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="1.1" id="KZQ-to-ANK"/>
                             <constraint firstItem="0UR-GE-O8M" firstAttribute="leading" secondItem="olW-jU-WC7" secondAttribute="leading" constant="40" id="Oc6-OX-A3d"/>
                             <constraint firstItem="WJq-Az-agM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="1.6" id="VL8-wn-KLI"/>
+                            <constraint firstItem="C4c-AF-kWN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ZqD-VU-zOn"/>
                             <constraint firstItem="0UR-GE-O8M" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.5" id="h4i-Df-Cgw"/>
+                            <constraint firstItem="C4c-AF-kWN" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.7" id="iYx-qu-PF6"/>
                             <constraint firstItem="sL8-ZN-vPH" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" multiplier="0.2" id="kcY-1r-Gwm"/>
                             <constraint firstItem="WJq-Az-agM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nXO-vT-sqk"/>
                             <constraint firstItem="WJq-Az-agM" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.5" id="ra7-z4-h3Y"/>
@@ -71,13 +81,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="oKe-SO-Q59">
-                                <rect key="frame" x="154.5" y="337.5" width="66" height="192"/>
+                                <rect key="frame" x="56.5" y="278" width="262.5" height="311"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kki-U3-jv0">
-                                        <rect key="frame" x="0.0" y="0.0" width="66" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="262.5" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="kki-U3-jv0" secondAttribute="height" multiplier="166:44" id="8gG-6h-DSl"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button" backgroundImage="button">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -85,10 +98,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7F-Li-K3q">
-                                        <rect key="frame" x="0.0" y="81" width="66" height="30"/>
+                                        <rect key="frame" x="0.0" y="121" width="262.5" height="69.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="n7F-Li-K3q" secondAttribute="height" multiplier="166:44" id="ILs-DK-ag7"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button" backgroundImage="button">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -96,10 +112,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRD-48-CKy">
-                                        <rect key="frame" x="0.0" y="162" width="66" height="30"/>
+                                        <rect key="frame" x="0.0" y="241.5" width="262.5" height="69.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="MRD-48-CKy" secondAttribute="height" multiplier="166:44" id="i5k-P2-fsd"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
-                                        <state key="normal" title="Button">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button" backgroundImage="button">
+                                            <color key="titleColor" systemColor="systemOrangeColor"/>
                                             <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -107,6 +126,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="MRD-48-CKy" firstAttribute="width" secondItem="kki-U3-jv0" secondAttribute="width" id="4ss-9s-CzC"/>
+                                    <constraint firstItem="n7F-Li-K3q" firstAttribute="width" secondItem="kki-U3-jv0" secondAttribute="width" id="eS8-ph-r7X"/>
+                                </constraints>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="問題文" translatesAutoresizingMaskIntoConstraints="NO" id="LtN-I0-zAN">
                                 <rect key="frame" x="40" y="59" width="295" height="149"/>
@@ -123,6 +146,7 @@
                         <constraints>
                             <constraint firstItem="oKe-SO-Q59" firstAttribute="centerY" secondItem="TLH-RG-UNz" secondAttribute="centerY" multiplier="1.3" id="5Fc-qK-FAk"/>
                             <constraint firstItem="LtN-I0-zAN" firstAttribute="centerY" secondItem="TLH-RG-UNz" secondAttribute="centerY" multiplier="0.4" id="FDK-zb-epW"/>
+                            <constraint firstItem="kki-U3-jv0" firstAttribute="width" secondItem="TLH-RG-UNz" secondAttribute="width" multiplier="0.7" id="dWU-dw-2Iz"/>
                             <constraint firstItem="LtN-I0-zAN" firstAttribute="centerX" secondItem="TLH-RG-UNz" secondAttribute="centerX" id="hCE-k4-qaM"/>
                             <constraint firstItem="oKe-SO-Q59" firstAttribute="centerX" secondItem="TLH-RG-UNz" secondAttribute="centerX" id="qm9-5g-Yc9"/>
                             <constraint firstItem="LtN-I0-zAN" firstAttribute="leading" secondItem="G3T-7p-6kr" secondAttribute="leading" constant="40" id="tfc-f7-H2A"/>
@@ -156,10 +180,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97b-UG-l5g">
-                                <rect key="frame" x="117.5" y="451" width="140" height="32"/>
+                                <rect key="frame" x="104.5" y="445" width="166" height="44"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="20"/>
-                                <state key="normal" title="タイトルへ戻る">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="タイトルへ戻る" backgroundImage="button">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -187,6 +211,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Swift-Logo" width="1600" height="1000"/>
+        <image name="button" width="166" height="44"/>
         <image name="start.png" width="148.32000732421875" height="60.479999542236328"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
